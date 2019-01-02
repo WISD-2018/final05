@@ -24,3 +24,13 @@ Route::get('review',  ['as' => 'hotel.review',  'uses' => 'HotelController@revie
 Auth::routes();
 Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/*後台*/
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('booking', ['as' => 'admin.booking.index', 'uses' => 'AdminController@index']);
+    Route::get('booking/{id}/edit', ['as' => 'admin.booking.edit', 'uses' => 'AdminController@edit']);
+    Route::post('booking', ['as' => 'admin.booking.store', 'uses' => 'AdminController@store']);
+    Route::patch('booking/{id}', ['as' => 'admin.booking.update', 'uses' => 'AdminController@update']);
+    Route::delete('booking/{id}', ['as' => 'admin.booking.destroy', 'uses' => 'AdminController@destroy']);
+});
