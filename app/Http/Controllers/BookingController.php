@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Booking;
 use Illuminate\Http\Request;
-
+use App\Room;
 class BookingController extends Controller
 {
     /**
@@ -14,7 +13,7 @@ class BookingController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -35,7 +34,7 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -81,5 +80,49 @@ class BookingController extends Controller
     public function destroy(Booking $booking)
     {
         //
+    }
+    public function time(Request $request)
+    {
+        $start = $request['StartTime'];
+        $rooms=Room::orderBy('id','ASC')->get();
+        $results =Booking::where('StartTime',$request->StartTime)->get();
+        return view('hotel.booking.1',[
+            'start'=>$start,
+            'rooms'=>$rooms,
+            'results' => $results,
+        ]);
+    }
+    public function room(Request $request)
+    {
+        $start = $request['StartTime'];
+        $results =Room::where('name',$request->chose)->get();
+        return view('hotel.booking.2',[
+            'start'=>$start,
+            'results' => $results,
+        ]);
+    }
+    public function check(Request $request)
+    {
+        $start = $request['StartTime'];
+        $name = $request['name'];
+        $email = $request['email'];
+        $phone = $request['phone'];
+        $country = $request['country'];
+        $address = $request['address'];
+        $results =Room::where('name',$request->chose)->get();
+        return view('hotel.booking.3',[
+            'start'=>$start,
+            'name'=>$name,
+            'email'=>$email,
+            'phone'=>$phone,
+            'country'=>$country,
+            'address'=>$address,
+            'results' => $results,
+        ]);
+    }
+    public function final(Request $request)
+    {
+        Booking::create($request->all());
+        return redirect()->route('hotel.index');
     }
 }

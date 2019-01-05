@@ -25,7 +25,13 @@ Auth::routes();
 Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+/*訂房*/
+Route::group(['prefix' => 'booking'], function() {
+    Route::get('time', ['as' => 'booking.time', 'uses' => 'BookingController@time']);
+    Route::get('room', ['as' => 'booking.room', 'uses' => 'BookingController@room']);
+    Route::get('check', ['as' => 'booking.check', 'uses' => 'BookingController@check']);
+    Route::post('final', ['as' => 'booking.final', 'uses' => 'BookingController@final']);
+});
 /*後台*/
 Route::group(['prefix' => 'admin'], function() {
     Route::get('/', ['as' => 'admin.index', 'uses' => 'AdminController@home']);
