@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', '洪店民宿-房型介紹')
 @section('content')
-    
+
     {{--css設計--}}
     <style type="text/css">
         #fun1{
@@ -153,7 +153,7 @@
                         <div class="col-md-4" style="padding-top: 30px;">
                             <div class="card" style="background-color:transparent">
                                 <div class="card-header" style="width:350px;height:60px;text-align:center;line-height:40px;">
-                                    {{--<a href="{{route('hotel.show.id',$rs->id)}}">--}}<font color="#737373" size="6" face="標楷體">{{$rs->name}}</font></a>
+                                    <a href="{{route('rooms.id',$rs->id)}}"><font color="#737373" size="6" face="標楷體">{{$rs->name}}</font></a>
                                 </div>
                                 <div class="card-body">
                                     <div id="circular--landscape-1">

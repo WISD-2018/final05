@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Room;
 use Illuminate\Http\Request;
 
 class HotelController extends Controller
@@ -84,7 +84,9 @@ class HotelController extends Controller
 
     public function rooms()
     {
-        return view('hotel.rooms');
+        $rooms=Room::orderBy('id','ASC')->get();
+        $data=['rooms'=>$rooms];
+        return view('hotel.rooms',$data);
     }
     public function about()
     {
