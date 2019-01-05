@@ -9,9 +9,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>洪店民宿<h1>
-                                <hr class="small">
-                                <span class="subheading">Where Are You Going -> Just Go Here</span>
+                        <h1>洪店民宿</h1>
+                        <hr class="small">
+                        <span class="subheading">Where Are You Going -> Just Go Here</span>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="#">
+                    <a href="{{url('/post1')}}">
                         <h2 class="post-title">
                             土魠的季節，好吃的滋味！
                         </h2>
@@ -36,7 +36,7 @@
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="#">
+                    <a href="{{url('/post2')}}">
                         <h2 class="post-title">
                             今年五月，花火節正式登場！
                         </h2>

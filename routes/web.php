@@ -34,3 +34,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::patch('booking/{id}', ['as' => 'admin.booking.update', 'uses' => 'AdminController@update']);
     Route::delete('booking/{id}', ['as' => 'admin.booking.destroy', 'uses' => 'AdminController@destroy']);
 });
+
+/*貼文*/
+Route::get('post1',  ['as'=>'posts.post1','uses' => 'PostController@post1']);
+Route::get('post2',  ['as'=>'posts.post2','uses' => 'PostController@post2']);
