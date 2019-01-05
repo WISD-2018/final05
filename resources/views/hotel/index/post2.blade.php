@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title','土魠的季節，好吃的滋味！')
+@section('title','今年五月，花火節正式登場！')
 @section('content')
 
     <!-- Page Header -->
@@ -99,7 +99,7 @@
         <!-- Pager -->
         <ul class="pager">
             <li class="next">
-                <a href="{{url('/post1')}}">Next Posts &rarr;</a>
+                <a href="{{url('/post3')}}">Next Posts &rarr;</a>
             </li>
         </ul>
     </div>
