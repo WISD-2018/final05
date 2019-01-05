@@ -1,3 +1,4 @@
+@extends('layouts.adminmaster')
 
 <!-- Page Heading -->
 <div class="row">
@@ -51,12 +52,14 @@
                         <td>{{$books->EndTime}}</td>
                         <td>
                             <div>
-                                <a href="{{ route('admin.booking.edit', $books->id) }}">編輯</a>
+                                <button>
+                                    <a href="{{ route('admin.booking.edit', $books->id) }}">編輯</a>
+                                </button>
                                 <form action="{{ route('admin.booking.destroy', $books->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
 
-                                    <button class="btn btn-link">刪除</button>
+                                    <button>刪除</button>
                                 </form>
                             </div>
                         </td>
