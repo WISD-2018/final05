@@ -14,7 +14,9 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        $rooms=Room::orderBy('id','ASC')->get();
+        $data=['rooms'=>$rooms];
+        return view('rooms',$data);
     }
 
     /**
@@ -46,7 +48,7 @@ class RoomController extends Controller
      */
     public function show(Room $room)
     {
-        //
+
     }
 
     /**
