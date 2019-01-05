@@ -89,4 +89,8 @@ class AdminController extends Controller
         Booking::destroy($id);
         return redirect()->route('admin.booking.index');
     }
+    public function home()
+    {
+        return view('admin.home');
+    }
 }
