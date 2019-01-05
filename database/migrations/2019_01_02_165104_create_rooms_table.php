@@ -17,7 +17,14 @@ class CreateRoomsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('price');
-            $table->text('pic');
+            $table->text('bed');
+            $table->char('pic');
+            $table->char('pic1');
+            $table->char('pic2');
+            $table->char('pic3');
+            $table->char('pic4');
+            $table->char('pic5');
+            $table->char('pic6');
             $table->timestamps();
         });
     }
