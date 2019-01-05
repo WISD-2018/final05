@@ -14,4 +14,12 @@ class PostController extends Controller
     {
         return view('post2');
     }
+    public function post3()
+    {
+        return view('post3');
+    }
+    public function post4()
+    {
+        return view('post4');
+    }
 }

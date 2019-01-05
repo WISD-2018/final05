@@ -45,6 +45,8 @@ Route::group(['prefix' => 'admin'], function() {
 /*貼文*/
 Route::get('post1',  ['as'=>'posts.post1','uses' => 'PostController@post1']);
 Route::get('post2',  ['as'=>'posts.post2','uses' => 'PostController@post2']);
+Route::get('post3',  ['as'=>'posts.post2','uses' => 'PostController@post3']);
+Route::get('post4',  ['as'=>'posts.post2','uses' => 'PostController@post4']);
 
 /*各房間*/
 Route::get('rooms/{id}',  ['as' => 'rooms.id',    'uses' => 'RoomController@detail']);
