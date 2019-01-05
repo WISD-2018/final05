@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Room;
 use App\Trip;
+use App\TripDetail;
 use Illuminate\Http\Request;
 
-class HotelController extends Controller
+class TripDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class HotelController extends Controller
      */
     public function index()
     {
-        return view('hotel.index');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class HotelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\TripDetail  $tripDetail
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(TripDetail $tripDetail)
     {
         //
     }
@@ -52,10 +52,10 @@ class HotelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\TripDetail  $tripDetail
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(TripDetail $tripDetail)
     {
         //
     }
@@ -64,10 +64,10 @@ class HotelController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\TripDetail  $tripDetail
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, TripDetail $tripDetail)
     {
         //
     }
@@ -75,36 +75,17 @@ class HotelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\TripDetail  $tripDetail
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(TripDetail $tripDetail)
     {
         //
     }
-
-    public function rooms()
+    public function detail($id)
     {
-        $rooms=Room::orderBy('id','ASC')->get();
-        $data=['rooms'=>$rooms];
-        return view('hotel.rooms',$data);
-    }
-    public function about()
-    {
-        return view('hotel.about');
-    }
-    public function trip()
-    {
-        $trips=Trip::orderBy('id','ASC')->get();
-        $data=['trips'=>$trips];
-        return view('hotel.trip',$data);
-    }
-    public function booking()
-    {
-        return view('hotel.booking');
-    }
-    public function review()
-    {
-        return view('hotel.review');
+        $trips=Trip::find($id);
+        $data = ['trips' => $trips];
+        return view('hotel.trip.detail', $data);
     }
 }
