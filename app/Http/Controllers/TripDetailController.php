@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Trip;
 use App\TripDetail;
 use Illuminate\Http\Request;
 
@@ -81,5 +81,11 @@ class TripDetailController extends Controller
     public function destroy(TripDetail $tripDetail)
     {
         //
+    }
+    public function detail($id)
+    {
+        $trips=Trip::find($id);
+        $data = ['trips' => $trips];
+        return view('hotel.trip.detail', $data);
     }
 }

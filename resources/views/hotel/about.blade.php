@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', '洪店民宿-關於我們')
+@section('title', 'about')
 @section('content')
 
     {{--css設計--}}

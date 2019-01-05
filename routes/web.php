@@ -48,3 +48,6 @@ Route::get('post2',  ['as'=>'posts.post2','uses' => 'PostController@post2']);
 
 /*各房間*/
 Route::get('rooms/{id}',  ['as' => 'rooms.id',    'uses' => 'RoomController@detail']);
+
+/*各行程*/
+Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripDetailController@detail']);

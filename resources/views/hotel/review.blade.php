@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', '洪店民宿-回憶紀錄')
+@section('title', 'review')
 @section('content')
     <head>
         <style>
@@ -35,18 +35,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 ">
-                <div class="card col-md-1" style="border-style:none;background-color:transparent">
-                    <div class="card-body" style="padding-top:1px;">
-                        <div class="pic">
-                            <img  src="img/HongDian.jpg"  class="center-block " alt="111">
-                        </div>
-                    </div>
-                </div>
                 <div class="card col-md-8" style="border-style: none; background-color:transparent">
                     <div class="card-body" style="padding-top:1px;">
-                        <font><b>洪店民宿_HongDian</b></font>
+                        <font><b>澎湖民宿</b></font>
                         <br>
-                        <font  size="3" color="gray">Last updated 10 mins ago</font>
+                        <font  size="3" color="gray">Last updated 5 mins ago</font>
                     </div>
                 </div>
 

@@ -1,5 +1,5 @@
 @extends('layouts.masterbook')
-@section('title','澎湖民宿推薦「洪店民宿」')
+@section('title','booking')
 @section('content')
 
     <!-- Page Header -->
