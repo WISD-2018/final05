@@ -51,3 +51,4 @@ Route::get('rooms/{id}',  ['as' => 'rooms.id',    'uses' => 'RoomController@deta
 
 /*各行程*/
 Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripDetailController@detail']);
+Route::get('map/{id}',  ['as' => 'map.id',    'uses' => 'MapController@detail']);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Room;
 use App\Trip;
+use App\Map;
 use Illuminate\Http\Request;
 
 class HotelController extends Controller
@@ -97,7 +98,9 @@ class HotelController extends Controller
     {
         $trips=Trip::orderBy('id','ASC')->get();
         $data=['trips'=>$trips];
-        return view('hotel.trip',$data);
+        $maps=Map::orderBy('id','ASC')->get();
+        $data2=['maps'=>$maps];
+        return view('hotel.trip',$data,$data2);
     }
     public function booking()
     {

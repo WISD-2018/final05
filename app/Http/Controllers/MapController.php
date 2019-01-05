@@ -82,4 +82,10 @@ class MapController extends Controller
     {
         //
     }
+    public function detail($id)
+    {
+        $maps=Map::find($id);
+        $data = ['maps' => $maps];
+        return view('hotel.map.detail', $data);
+    }
 }
