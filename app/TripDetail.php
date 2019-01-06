@@ -16,4 +16,7 @@ class TripDetail extends Model
     public function trips(){
         return $this->belongsTo('App\Trip');
     }
+    public function views(){
+        return $this->belongsTo('App\View');
+    }
 }
