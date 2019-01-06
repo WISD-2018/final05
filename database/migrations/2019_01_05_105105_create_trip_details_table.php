@@ -16,6 +16,7 @@ class CreateTripDetailsTable extends Migration
         Schema::create('trip_details', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('trips_id');
+            $table->unsignedInteger('views_id');
             $table->string('name');
             $table->string('content');
             $table->char('pic');
