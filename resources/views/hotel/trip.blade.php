@@ -1,7 +1,5 @@
 @extends('layouts.master')
-
 @section('title', 'Trip')
-
 @section('content')
 
     <!-- Page Header -->
@@ -20,40 +18,41 @@
         </div>
     </header>
 
-    <div class="row">
-        <div class="col-md-8" style="background-color:transparent">
-            @foreach($trips as $ts)
-                <div class="col-md-4" style="padding-top: 20px;">
-                    <div class="card" style="background-color:transparent">
-                        <div class="card-header" style="width:250px;height:60px;text-align:center;line-height:40px;">
-                            <a href="{{route('trip.id',$ts->id)}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">{{$ts->name}}</span></span></a>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+    <div class="container">
+        <div class="row.justify-content-center">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                @foreach($trips as $ts)
+                <ul class="nav navbar-nav ">
+                    <li>
+                        <a><span style="font-size:0.7cm;">|</span></a>
+                    </li>
+                    <li>
+                        <a href="{{route('trip.id',$ts->id)}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">{{$ts->name}}</span></span></a>
+                    </li>
+                @endforeach
+                    <li>
+                        <a><span style="font-size:0.7cm;">|</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-
 
     <!-- Main Content -->
     <div class="container">
         <div class="row.justify-content-center">
-            {{--中--}}
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav ">
-
                     <img src="img/map.jpg" width="1000" height="1414" usemap="#map">
                     <map name="map">
                         @foreach($maps as $ms)
-                        　<area shape="rect" coords="{{$ms->location}}" href="{{route('map.id',$ms->name)}}">
-                            @endforeach
+                        　<area shape="rect" coords="{{$ms->location}}" href="{{route('map.id',$ms->id)}}">
+                        @endforeach
                     </map>
                 </ul>
                 <br>
             </div>
         </div>
     </div>
-
 
 @endsection
