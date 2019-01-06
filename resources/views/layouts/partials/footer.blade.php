@@ -21,13 +21,13 @@
                     <br><a href="{{url('/about')}}"><font style="font-size:18px;" color="#696969" face="標楷體">精選照片</font></a>
                 </div>
                 <div class="col-md-2" style="background-color:transparent">
-                    <a href="{{url('/post')}}"><font style="font-size:18px;" color="#696969" face="標楷體">房價一覽表</font></a>
-                    <br><a href="{{url('/room1')}}"><font style="font-size:18px;" color="#696969" face="標楷體">小管房</font></a>
-                    <br><a href="{{url('/room2')}}"><font style="font-size:18px;" color="#696969" face="標楷體">土魠房</font></a>
-                    <br><a href="{{url('/room3')}}"><font style="font-size:18px;" color="#696969" face="標楷體">石斑房</font></a>
-                    <br><a href="{{url('/room4')}}"><font style="font-size:18px;" color="#696969" face="標楷體">紅魽房</font></a>
-                    <br><a href="{{url('/room5')}}"><font style="font-size:18px;" color="#696969" face="標楷體">花枝丸房</font></a>
-                    <br><a href="{{url('/room6')}}"><font style="font-size:18px;" color="#696969" face="標楷體">垵米房</font></a>
+                    <a href="{{url('/rooms')}}"><font style="font-size:18px;" color="#696969" face="標楷體">房價一覽表</font></a>
+                    <br><a href="{{url('/rooms/1')}}"><font style="font-size:18px;" color="#696969" face="標楷體">小管房</font></a>
+                    <br><a href="{{url('/rooms/2')}}"><font style="font-size:18px;" color="#696969" face="標楷體">土魠房</font></a>
+                    <br><a href="{{url('/rooms/3')}}"><font style="font-size:18px;" color="#696969" face="標楷體">石斑房</font></a>
+                    <br><a href="{{url('/rooms/4')}}"><font style="font-size:18px;" color="#696969" face="標楷體">紅魽房</font></a>
+                    <br><a href="{{url('/rooms/5')}}"><font style="font-size:18px;" color="#696969" face="標楷體">花枝丸房</font></a>
+                    <br><a href="{{url('/rooms/6')}}"><font style="font-size:18px;" color="#696969" face="標楷體">垵米房</font></a>
                 </div>
                 <div class="col-md-2" style="background-color:transparent">
                     <a href="{{url('/booking')}}"><font style="font-size:18px;" color="#696969" face="標楷體">快速訂房</font></a>

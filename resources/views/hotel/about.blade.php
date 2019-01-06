@@ -105,7 +105,7 @@
         <div class="row">
             <div class="col-md-12" style="padding-top: 30px">
                 <font style="font-size:35px" color="#000000" face="標楷體"><b>地理位置...</b></font>
-                <iframe width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=澎湖縣白沙鄉中屯村10鄰中屯52之3號&z=16&output=embed&t='></iframe>
+                <iframe width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=884澎湖縣白沙鄉中屯52-3號&output=embed&t='></iframe>
             </div>
         </div>
 

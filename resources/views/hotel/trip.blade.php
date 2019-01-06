@@ -21,15 +21,21 @@
     <div class="container">
         <div class="row.justify-content-center">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                @foreach($trips as $ts)
                 <ul class="nav navbar-nav ">
+                    <li>
+                        <a><span style="font-size:0.7cm;">|</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('/trip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">旅遊導覽</span></span></a>
+                    </li>
+                    @foreach($trips as $ts)
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>
                     <li>
                         <a href="{{route('trip.id',$ts->id)}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">{{$ts->name}}</span></span></a>
                     </li>
-                @endforeach
+                    @endforeach
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>

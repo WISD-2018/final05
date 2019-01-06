@@ -19,6 +19,8 @@
     </div>
 </header>
 
+@include('layouts.link')
+
 <!--foreach抓地圖資料表的pic-->
 <div>
     <img src="{{$maps->pic}}" width="100%">
