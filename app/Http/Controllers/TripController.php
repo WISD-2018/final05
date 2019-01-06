@@ -82,4 +82,10 @@ class TripController extends Controller
     {
         //
     }
+    public function detail($id)
+    {
+        $trips = Trip::find($id);
+        $data = ['trips' => $trips];
+        return view('hotel.trip.detail', $data);
+    }
 }

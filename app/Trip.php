@@ -8,9 +8,11 @@ class Trip extends Model
 {
     protected $table = 'trips';
     protected $fillable = [
-        'name'
+        'name',
+        'pic1',
+        'pic2',
+        'pic3',
+        'pic4',
+        'pic5',
     ];
-    public function trips_detail(){
-        return $this->hasMany('App\TripDetail');
-    }
 }

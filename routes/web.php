@@ -52,5 +52,5 @@ Route::get('post4',  ['as'=>'posts.post2','uses' => 'PostController@post4']);
 Route::get('rooms/{id}',  ['as' => 'rooms.id',    'uses' => 'RoomController@detail']);
 
 /*各行程*/
-Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripDetailController@detail']);
+Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripController@detail']);
 Route::get('map/{id}',  ['as' => 'map.id',    'uses' => 'MapController@detail']);
