@@ -83,6 +83,7 @@ class TripController extends Controller
         //
     }
 
+
     public function onedaytrip()
     {
         return view('hotel.trip.onedaytrip');
@@ -142,4 +143,12 @@ class TripController extends Controller
     {
         return view('hotel.trip.threedayplanC');
     }
+    public function detail($id)
+    {
+        $trips = Trip::find($id);
+        $data = ['trips' => $trips];
+        return view('hotel.trip.detail', $data);
+
+    }
 }
+
