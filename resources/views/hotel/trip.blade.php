@@ -18,7 +18,20 @@
         </div>
     </header>
 
-    @include('layouts.link')
+    <div class="container">
+        <div class="row.justify-content-center">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+                        @foreach($trips as $ts)
+                        <li>
+                            <a href="{{route('trip.id',$ts->id)}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">{{$ts->name}}</span></span></a>
+                        </li>
+                        @endforeach
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <div class="container">
