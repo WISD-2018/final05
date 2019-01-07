@@ -82,4 +82,64 @@ class TripController extends Controller
     {
         //
     }
+
+    public function onedaytrip()
+    {
+        return view('hotel.trip.onedaytrip');
+    }
+
+    public function onedayplanA()
+    {
+        return view('hotel.trip.onedayplanA');
+    }
+
+    public function onedayplanB()
+    {
+        return view('hotel.trip.onedayplanB');
+    }
+
+    public function onedayplanC()
+    {
+        return view('hotel.trip.onedayplanC');
+    }
+
+    public function twodaytrip()
+    {
+        return view('hotel.trip.twodaytrip');
+    }
+
+    public function twodayplanA()
+    {
+        return view('hotel.trip.twodayplanA');
+    }
+
+    public function twodayplanB()
+    {
+        return view('hotel.trip.twodayplanB');
+    }
+
+    public function twodayplanC()
+    {
+        return view('hotel.trip.twodayplanC');
+    }
+
+    public function threedaytrip()
+    {
+        return view('hotel.trip.threedaytrip');
+    }
+
+    public function threedayplanA()
+    {
+        return view('hotel.trip.threedayplanA');
+    }
+
+    public function threedayplanB()
+    {
+        return view('hotel.trip.threedayplanB');
+    }
+
+    public function threedayplanC()
+    {
+        return view('hotel.trip.threedayplanC');
+    }
 }
