@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>回憶紀錄</h1>
+                        <h1><font color="#ffffff" face="微軟正黑體">回憶紀錄</font></h1>
                         <hr class="small">
                         <span class="subheading">Create Good Memories Today,So That You Can Have A Good Past.</span>
                     </div>
@@ -37,15 +37,14 @@
             <div class="col-md-12 ">
                 <div class="card col-md-8" style="border-style: none; background-color:transparent">
                     <div class="card-body" style="padding-top:1px;">
-                        <font><b>澎湖民宿</b></font>
+                        <font><b><font color="#000000" face="微軟正黑體">澎湖民宿</font></b></font>
                         <br>
-                        <font  size="3" color="gray">Last updated 5 mins ago</font>
+                        <font  size="3" color="gray"><font color="#000000" face="微軟正黑體">Last updated 5 mins ago</font></font>
                     </div>
                 </div>
-
+                <font color="#000000" face="微軟正黑體">
                 <div class="card col-md-12" style="border-style:none;background-color:transparent">
                     <div class="card-body" style="padding-top:1px;">
-
                         <div class="card-deck">
                             <div class="card">
                                 <div class="card-header">
@@ -93,6 +92,7 @@
                         </div>
                     </div>
                 </div>
+                </font>
             </div>
         </div>
     </div>

@@ -18,31 +18,31 @@
                     <a><span style="font-size:0.7cm;">|</span></a>
                 </li>
                 <li>
-                    <a href="{{route('hotel.about')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">關於我們</span></span></a>
+                    <a href="{{route('hotel.about')}}"><span style="font-size:0.7cm;"><font color="#ffffff" size="5" face="微軟正黑體">關於我們</font></span></a>
                 </li>
                 <li>
                     <a><span style="font-size:0.7cm;">|</span></a>
                 </li>
                 <li>
-                    <a href="{{route('hotel.rooms')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">房型介紹</span></span></a>
+                    <a href="{{route('hotel.rooms')}}"><span style="font-size:0.7cm;"><font color="#ffffff" size="5" face="微軟正黑體">房型介紹</font></span></a>
                 </li>
                 <li>
                     <a><span style="font-size:0.7cm;">|</span></a>
                 </li>
                 <li>
-                    <a href="{{route('hotel.booking')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">快速訂房</span></span></a>
+                    <a href="{{route('hotel.booking')}}"><span style="font-size:0.7cm;"><font color="#ffffff" size="5" face="微軟正黑體">快速訂房</font></span></a>
                 </li>
                 <li>
                     <a><span style="font-size:0.7cm;">|</span></a>
                 </li>
                 <li>
-                    <a href="{{route('hotel.trip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">行程規劃</span></span></a>
+                    <a href="{{route('hotel.trip')}}"><span style="font-size:0.7cm;"><font color="#ffffff" size="5" face="微軟正黑體">行程規劃</font></span></a>
                 </li>
                 <li>
                     <a><span style="font-size:0.7cm;">|</span></a>
                 </li>
                 <li>
-                    <a href="{{route('hotel.review')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">回憶紀錄</span></span></a>
+                    <a href="{{route('hotel.review')}}"><span style="font-size:0.7cm;"><font color="#ffffff" size="5" face="微軟正黑體">回憶紀錄</font></span></a>
                 </li>
                 <li>
                     <a><span style="font-size:0.7cm;">|</span></a>

@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>關於我們</h1>
+                        <h1><font color="#ffffff" face="微軟正黑體">關於我們</font></h1>
                         <hr class="small">
                         <span class="subheading">This Is What I Do.</span>
                     </div>
@@ -43,7 +43,7 @@
         {{--中--}}
         <div id="fun1">
             <font style="font-size:35px" color="#000000" face="標楷體"><b>民宿簡介...</b></font>
-            <h1>　　『遠離吵雜，回歸純樸』</h1>
+            <h1><font color="#000000" face="微軟正黑體">　　『遠離吵雜，回歸純樸』</font></h1>
             <font style="font-size:20px" color="#000000" face="標楷體">洪店民宿有六人房，四人房和二人房，遠離塵囂的馬公鬧區，是個安靜又離鬧區不遠的澎湖小漁村。我們不只是提供住的舒適的房間，最主要的是提供人的服務，讓您像是住到老朋友家。</font>
         </div>
 
@@ -53,7 +53,7 @@
 
         <div id="fun1">
             <font style="font-size:35px" color="#000000" face="標楷體"><b>經營理念...</b></font>
-            <h1>　　『我愛澎湖，澎湖愛我』</h1>
+            <h1><font color="#000000" face="微軟正黑體">　　『我愛澎湖，澎湖愛我』</font></h1>
             <div class="col-md-12">
                 <div class="col-md-8" style="padding-top: 15px">
                     <div class="card text-center" style="border-style:none;background-color:transparent;">

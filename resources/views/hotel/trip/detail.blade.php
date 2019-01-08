@@ -45,16 +45,13 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 
-<<<<<<< HEAD
+
 <header class="intro-header" style="background-image: url('https://i.imgur.com/fDkWInV.jpg')">
-=======
-<header class="intro-header" style="background-image: url('https://i.imgur.com/SV0BJxs.jpg')">
->>>>>>> f70edfe2464338140ab0daa0bd6cbd877f345cee
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="page-heading">
-                    <h1>{{$trips->name}}</h1>
+                    <h1><font color="#ffffff" face="微軟正黑體">{{$trips->name}}</font></h1>
                     <hr class="small">
                 </div>
             </div>
@@ -62,7 +59,7 @@
     </div>
 </header>
 
-<<<<<<< HEAD
+
     @include('layouts.link')
 
     <div id="st1" class="st">
@@ -155,7 +152,7 @@
     <font color="#737373" size="4" face="微軟正黑體"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.建議4~9月份前往較適合，也算是澎湖的旅遊旺季，4~6月有花火節，6~9月是暑假階段，天氣炎熱，很適合玩水上活動。</b></font><br>
 </div>
 @endsection
-=======
+
 <div class="row">
     <div class="col-md-8" style="background-color:transparent">
             <div class="grid-container">
@@ -179,4 +176,4 @@
             </div>
     </div>
 </div>
->>>>>>> f70edfe2464338140ab0daa0bd6cbd877f345cee
+</header>

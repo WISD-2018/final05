@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>房型介紹</h1>
+                        <h1><font color="#ffffff" face="微軟正黑體">房型介紹</font></h1>
                         <hr class="small">
                         <span class="subheading">This is what I do.</span>
                     </div>
