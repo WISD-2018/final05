@@ -18,6 +18,8 @@ class CreateViewsTable extends Migration
             $table->unsignedInteger('tripdetails_id');
             $table->text('name');
             $table->char('pic');
+            $table->char('introduced');
+            $table->char('distance');
             $table->timestamps();
         });
     }

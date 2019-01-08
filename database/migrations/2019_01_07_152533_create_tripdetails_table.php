@@ -18,6 +18,12 @@ class CreateTripdetailsTable extends Migration
             $table->unsignedInteger('trips_id');
             $table->text('name');
             $table->char('pic');
+            $table->char('introduced1');
+            $table->char('introduced2');
+            $table->char('introduced3');
+            $table->char('introduced4');
+            $table->char('introduced5');
+            $table->char('introduced6');
             $table->timestamps();
         });
     }
