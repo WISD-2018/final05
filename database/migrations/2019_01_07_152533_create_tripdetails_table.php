@@ -23,7 +23,6 @@ class CreateTripdetailsTable extends Migration
             $table->char('introduced3');
             $table->char('introduced4');
             $table->char('introduced5');
-            $table->char('introduced6');
             $table->timestamps();
         });
     }
