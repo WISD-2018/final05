@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Trip;
+use App\Tripdetail;
 use Illuminate\Http\Request;
 
 class TripController extends Controller
@@ -147,8 +148,11 @@ class TripController extends Controller
     {
         $trips = Trip::find($id);
         $data = ['trips' => $trips];
-        return view('hotel.trip.detail', $data);
 
+        $tripdetails = Tripdetail::where('trips_id',$id)->get();
+        $data2 = ['tripdetails' => $tripdetails];
+
+        return view('hotel.trip.detail', $data,$data2);
     }
 }
 

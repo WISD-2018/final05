@@ -8,25 +8,25 @@
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>
                     <li>
-                        <a href="{{url('/trip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">旅遊導覽</span></span></a>
+                        <a href="{{url('/trip')}}"><span style="font-size:0.7cm;"><font color="#000000" face="微軟正黑體">旅遊導覽</font></span></a>
                     </li>
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>
                     <li>
-                        <a href="{{url('/onedaytrip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">一日遊行程</span></span></a>
+                        <a href="{{url('/trip/1')}}"><span style="font-size:0.7cm;"><font color="#000000" face="微軟正黑體">一日遊行程</font></span></a>
                     </li>
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>
                     <li>
-                        <a href="{{url('/twodaytrip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">二日遊行程</span></span></a>
+                        <a href="{{url('/trip/2')}}"><span style="font-size:0.7cm;"><font color="#000000" face="微軟正黑體">二日遊行程</font></span></a>
                     </li>
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>
                     </li>
                     <li>
-                        <a href="{{url('/threedaytrip')}}"><span style="font-size:0.7cm;"><span style="font-family:SimSun;">三日遊行程</span></span></a>
+                        <a href="{{url('/trip/3')}}"><span style="font-size:0.7cm;"><font color="#000000" face="微軟正黑體">三日遊行程</font></span></a>
                     </li>
                     <li>
                         <a><span style="font-size:0.7cm;">|</span></a>

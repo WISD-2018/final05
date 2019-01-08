@@ -51,28 +51,24 @@ Route::get('post4',  ['as'=>'posts.post2','uses' => 'PostController@post4']);
 /*房間*/
 Route::get('rooms/{id}',  ['as' => 'rooms.id',    'uses' => 'RoomController@detail']);
 
-
-/*行程+地圖*/
-Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripDetailController@detail']);
-
 /*各行程*/
 Route::get('trip/{id}',  ['as' => 'trip.id',    'uses' => 'TripController@detail']);
-
 Route::get('map/{id}',  ['as' => 'map.id',    'uses' => 'MapController@detail']);
+Route::get('trip/view/{id}',  ['as' => 'view.id',    'uses' => 'TripdetailController@detail']);
 
-/*行程規劃各分頁*/
-Route::get('onedaytrip',  [ 'as' => 'trip.onedaytrip','uses' => 'TripController@onedaytrip']);
-Route::get('twodaytrip', [ 'as' => 'trip.twodaytrip', 'uses' => 'TripController@twodaytrip']);
-Route::get('threedaytrip',    [ 'as' => 'trip.threedaytrip', 'uses' => 'TripController@threedaytrip']);
-
-Route::get('onedayplanA',  ['as' => 'trip.onedayplanA', 'uses' => 'TripController@onedayplanA']);
-Route::get('onedayplanB',  ['as' => 'trip.onedayplanB', 'uses' => 'TripController@onedayplanB']);
-Route::get('onedayplanC',  ['as' => 'trip.onedayplanC', 'uses' => 'TripController@onedayplanC']);
-
-Route::get('twodayplanA',  ['as' => 'trip.twodayplanA', 'uses' => 'TripController@twodayplanA']);
-Route::get('twodayplanB',  ['as' => 'trip.twodayplanB', 'uses' => 'TripController@twodayplanB']);
-Route::get('twodayplanC',  ['as' => 'trip.twodayplanC', 'uses' => 'TripController@twodayplanC']);
-
-Route::get('threedayplanA',  ['as' => 'trip.threedayplanA', 'uses' => 'TripController@threedayplanA']);
-Route::get('threedayplanB',  ['as' => 'trip.threedayplanB', 'uses' => 'TripController@threedayplanB']);
-Route::get('threedayplanC',  ['as' => 'trip.threedayplanC', 'uses' => 'TripController@threedayplanC']);
+///*行程規劃各分頁*/
+//Route::get('onedaytrip',  [ 'as' => 'trip.onedaytrip','uses' => 'TripController@onedaytrip']);
+//Route::get('twodaytrip', [ 'as' => 'trip.twodaytrip', 'uses' => 'TripController@twodaytrip']);
+//Route::get('threedaytrip',    [ 'as' => 'trip.threedaytrip', 'uses' => 'TripController@threedaytrip']);
+//
+//Route::get('onedayplanA',  ['as' => 'trip.onedayplanA', 'uses' => 'TripController@onedayplanA']);
+//Route::get('onedayplanB',  ['as' => 'trip.onedayplanB', 'uses' => 'TripController@onedayplanB']);
+//Route::get('onedayplanC',  ['as' => 'trip.onedayplanC', 'uses' => 'TripController@onedayplanC']);
+//
+//Route::get('twodayplanA',  ['as' => 'trip.twodayplanA', 'uses' => 'TripController@twodayplanA']);
+//Route::get('twodayplanB',  ['as' => 'trip.twodayplanB', 'uses' => 'TripController@twodayplanB']);
+//Route::get('twodayplanC',  ['as' => 'trip.twodayplanC', 'uses' => 'TripController@twodayplanC']);
+//
+//Route::get('threedayplanA',  ['as' => 'trip.threedayplanA', 'uses' => 'TripController@threedayplanA']);
+//Route::get('threedayplanB',  ['as' => 'trip.threedayplanB', 'uses' => 'TripController@threedayplanB']);
+//Route::get('threedayplanC',  ['as' => 'trip.threedayplanC', 'uses' => 'TripController@threedayplanC']);
