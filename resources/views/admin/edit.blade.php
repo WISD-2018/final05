@@ -3,13 +3,14 @@
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            編輯訂房 <small>編輯訂房資訊</small>
+            <br>
+            <font color="#000000" face="微軟正黑體">編輯訂房<small>　編輯訂房資訊</small></font>
         </h1>
     </div>
 </div>
 <!-- /.row -->
 <!-- /.row -->
-
+<font color="#000000" face="微軟正黑體">
 <div class="row">
     <div class="col-lg-12">
         <form action="/admin/booking/{{$bookings->id}}" method="POST" role="form">
@@ -59,8 +60,8 @@
             <div class="text-right">
                 <button type="submit" class="btn btn-success">更新</button>
             </div>
-
         </form>
     </div>
 </div>
+</font>
 <!-- /.row -->

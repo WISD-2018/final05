@@ -1,6 +1,6 @@
 @extends('layouts.adminmaster')
 @section('content')
-    <div class="row" style="background-image: url('img/wench.png');background-size: 50%">
+    <div class="row" style="background-image: url('https://i.imgur.com/Bzk1MNd.png');background-size: 100%;background-repeat: no-repeat">
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>

@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{ route('admin.index') }}>民宿後台</a>
+        <a class="navbar-brand" href={{ route('admin.index') }}><font color="#ffffff" face="微軟正黑體">民宿後台</font></a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
@@ -24,6 +24,9 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li>
+                    <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
                 </li>
                 <li class="divider"></li>
                 <li>
@@ -46,7 +49,7 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
             <li>
-                <a href="{{ route('admin.booking.index') }}"><i class="fa fa-fw fa-edit"></i> 訂房管理</a>
+                <a href="{{ route('admin.booking.index') }}"><font color="#ffffff" face="微軟正黑體"><i class="fa fa-fw fa-edit"></i>訂房管理</font></a>
             </li>
         </ul>
     </div>
