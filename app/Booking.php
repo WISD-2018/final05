@@ -16,6 +16,7 @@ class Booking extends Model
         'address',
         'StartTime',
         'EndTime',
+        'state'
     ];
     public function rooms(){
         return $this->hasMany('App\Room');

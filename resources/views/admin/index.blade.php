@@ -21,13 +21,15 @@
                 <tr>
                     <th width="100" style="text-align:center">訂房編號</th>
                     <th width="100" style="text-align:center">房型編號</th>
-                    <th width="70" style="text-align:center">聯絡人</th>
-                    <th width="30" style="text-align:center">email</th>
-                    <th width="30" style="text-align:center">電話</th>
-                    <th width="50" style="text-align:center">國家</th>
-                    <th width="70" style="text-align:center">地址</th>
+                    <th width="100" style="text-align:center">聯絡人</th>
+                    <th width="100" style="text-align:center">email</th>
+                    <th width="100" style="text-align:center">電話</th>
+                    <th width="100" style="text-align:center">國家</th>
+                    <th width="100" style="text-align:center">地址</th>
                     <th width="100" style="text-align:center">入住時間</th>
                     <th width="100" style="text-align:center">退房時間</th>
+                    <th width="100" style="text-align:center">訂房狀態</th>
+                    <th width="100" style="text-align:center"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -42,6 +44,7 @@
                         <td>{{$books->address}}</td>
                         <td>{{$books->StartTime}}</td>
                         <td>{{$books->EndTime}}</td>
+                        <td>{{$books->state}}</td>
                         <td>
                             <div>
                                 <button>

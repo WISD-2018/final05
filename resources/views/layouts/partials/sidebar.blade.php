@@ -48,8 +48,14 @@
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
+            {{--<li>--}}
+                {{--<a href="{{ route('admin.post.index') }}"><font color="#ffffff" face="微軟正黑體"><i class="fa fa-fw fa-edit"></i>公告管理</font></a>--}}
+            {{--</li>--}}
             <li>
                 <a href="{{ route('admin.booking.index') }}"><font color="#ffffff" face="微軟正黑體"><i class="fa fa-fw fa-edit"></i>訂房管理</font></a>
+            </li>
+            <li>
+                <a href="{{ route('admin.tripdetail.index') }}"><font color="#ffffff" face="微軟正黑體"><i class="fa fa-fw fa-edit"></i>行程規劃管理</font></a>
             </li>
         </ul>
     </div>

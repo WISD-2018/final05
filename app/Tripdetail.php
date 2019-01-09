@@ -11,6 +11,11 @@ class Tripdetail extends Model
         'trips_id',
         'name',
         'pic',
+        'introduced1',
+        'introduced2',
+        'introduced3',
+        'introduced4',
+        'introduced5',
     ];
     public function trip()
     {

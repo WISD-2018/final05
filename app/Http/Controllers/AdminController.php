@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Booking;
+use App\Tripdetail;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -16,6 +17,13 @@ class AdminController extends Controller
         $bookings=Booking::orderBy('id','ASC')->get();
         $data=['bookings'=>$bookings];
         return view('admin.index',$data);
+    }
+
+    public function index2()
+    {
+        $tripdetails=Tripdetail::orderBy('id','ASC')->get();
+        $data2=['tripdetails'=>$tripdetails];
+        return view('admin.tripdetail.index',$data2);
     }
 
     /**
@@ -38,6 +46,12 @@ class AdminController extends Controller
     {
         Booking::create($request->all());
         return redirect()->route('admin.booking.index');
+    }
+
+    public function store2(Request $request)
+    {
+        Tripdetail::create($request->all());
+        return redirect()->route('admin.tripdetail.index');
     }
 
     /**
@@ -64,6 +78,13 @@ class AdminController extends Controller
         return view('admin.edit', $data);
     }
 
+    public function edit2($id)
+    {
+        $tripdetails=Tripdetail::find($id);
+        $data2 = ['tripdetails' => $tripdetails];
+        return view('admin.tripdetail.edit', $data2);
+    }
+
     /**
      * Update the specified resource in storage.
      *
@@ -73,9 +94,17 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $bookings=Booking::find($id);
         $bookings->update($request->all());
         return redirect()->route('admin.booking.index');
+    }
+
+    public function update2(Request $request, $id)
+    {
+        $tripdetails=Tripdetail::find($id);
+        $tripdetails->update($request->all());
+        return redirect()->route('admin.tripdetail.index');
     }
 
     /**
@@ -89,6 +118,13 @@ class AdminController extends Controller
         Booking::destroy($id);
         return redirect()->route('admin.booking.index');
     }
+
+    public function destroy2($id)
+    {
+        Tripdetail::destroy($id);
+        return redirect()->route('admin.tripdetail.index');
+    }
+
     public function home()
     {
         return view('admin.home');

@@ -40,6 +40,12 @@ Route::group(['prefix' => 'admin'], function() {
     Route::post('booking', ['as' => 'admin.booking.store', 'uses' => 'AdminController@store']);
     Route::patch('booking/{id}', ['as' => 'admin.booking.update', 'uses' => 'AdminController@update']);
     Route::delete('booking/{id}', ['as' => 'admin.booking.destroy', 'uses' => 'AdminController@destroy']);
+
+    Route::get('tripdetail', ['as' => 'admin.tripdetail.index', 'uses' => 'AdminController@index2']);
+    Route::get('tripdetail/{id}/edit', ['as' => 'admin.tripdetail.edit', 'uses' => 'AdminController@edit2']);
+    Route::post('tripdetail', ['as' => 'admin.tripdetail.store', 'uses' => 'AdminController@store2']);
+    Route::patch('tripdetail/{id}', ['as' => 'admin.tripdetail.update', 'uses' => 'AdminController@update2']);
+    Route::delete('tripdetail/{id}', ['as' => 'admin.tripdetail.destroy', 'uses' => 'AdminController@destroy2']);
 });
 
 /*貼文*/
