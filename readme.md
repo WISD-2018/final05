@@ -15,13 +15,13 @@
 
 ## 系統主要功能：
 
--關於我們頁面設計：Route:/about(陳姿婷)
--房型介紹頁面設計：Route:/rooms(陳姿婷)
--線上訂房頁面設計：Route:/booking(陳冠宇)
--行程規劃頁面設計：Route:/trip(陳姿婷)
--回憶紀錄頁面設計：Route:/review(陳冠宇)
--後台管理頁面設計：Route:/admin(陳冠宇)
--後台訂房管理設計：Route:/admin/booking、edit、destroy(陳冠宇)
+-關於我們頁面設計：Route:/about(陳姿婷)<br>
+-房型介紹頁面設計：Route:/rooms(陳姿婷)<br>
+-線上訂房頁面設計：Route:/booking(陳冠宇)<br>
+-行程規劃頁面設計：Route:/trip(陳姿婷)<br>
+-回憶紀錄頁面設計：Route:/review(陳冠宇)<br>
+-後台管理頁面設計：Route:/admin(陳冠宇)<br>
+-後台訂房管理設計：Route:/admin/booking、edit、destroy(陳冠宇)<br>
 -後台行程管理設計：Route:/admin/tripdetail、edit、destroy(陳姿婷)
 
 ## 初始專案與DB負責的同學：
