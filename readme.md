@@ -1,69 +1,51 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="https://i.imgur.com/zooZz0l.jpg"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# 民宿訂房網站
 
-## About Laravel
+讓消費者除了在訂房之餘，同時也能充分了解到澎湖各種風情的網站。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## 系統作用：
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 民宿簡介，讓消費者更清楚瞭解本民宿。
+- 房型介紹，充分介紹房間，不會有到當場才發現很失望的情形。
+- 線上訂房，可以線上完成房間訂購。
+- 行程規劃，介紹民宿知道的遊玩行程規劃，供消費者了解參考。
+- 回憶紀錄，運用社群網站(Instaram)連結出到澎湖各地遊玩的旅客，展現出本民宿貼近消費者的生活感。
+- 後台，管理人員可以查看線上訂房或行程規劃的顯示,新增,刪除,修改。
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## 系統主要功能：
 
-## Learning Laravel
+-關於我們頁面設計：Route:/about(陳姿婷)
+-房型介紹頁面設計：Route:/rooms(陳姿婷)
+-線上訂房頁面設計：Route:/booking(陳冠宇)
+-行程規劃頁面設計：Route:/trip(陳姿婷)
+-回憶紀錄頁面設計：Route:/review(陳冠宇)
+-後台管理頁面設計：Route:/admin(陳冠宇)
+-後台訂房管理設計：Route:/admin/booking、edit、destroy(陳冠宇)
+-後台行程管理設計：Route:/admin/tripdetail、edit、destroy(陳姿婷)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+## 初始專案與DB負責的同學：
+初始專案、資料表、資料表關聯設計：陳冠宇
+資料建立：陳姿婷
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## 額外使用的套件或模板：
+Clean Blog模板--首頁美觀用
+Side Bar模板--後台管理用
 
-## Laravel Sponsors
+## 系統復原步驟：
+1. > clone下來本專案。
+2. > Cmder先cd進本專案，然後輸入composer install。
+3. >再輸入copy .env.example .env，以及artisan key:generate。
+4. > 調整.env內容：DB_PORT=33060、DB_DATABASE=final05、DB_USERNAME=root、DB_PASSWORD=root
+5. > 開啟UwAmp，點擊PHPMyAdmin，照著剛剛.env輸入的資料作登入。
+6. > 點擊建立資料庫，名稱輸入：final05。
+7. > 建立完成後，點擊左邊的匯入紐，選擇檔案找到final05資料夾內的database資料夾，選擇final05.sql，執行。
+8. > 開啟UwAmp，點擊Browser www，開始瀏覽！
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+##系統使用帳號：
+後台登入使用帳號：coco214034@gmail.com，密碼：123456
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##系統開發人員：
+國立勤益科技大學 資訊管理系
+四資三乙-3A532081-陳冠宇
+四資三乙-3A532059-陳姿婷
